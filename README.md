@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# 🗒️ SlidesToNotes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The **SlidesToNotes** is the user interface for the **SlidesToNotes** application, allowing users to easily upload PowerPoint presentations, generate concise notes, and download metadata. Built using **React**, the application is designed with simplicity and efficiency in mind to enhance your learning experience.  
 
-## Available Scripts
+## 🚀 Features  
 
-In the project directory, you can run:
+- **Effortless Note Generation**  
+  Upload `.pptx` files to quickly extract and generate notes without any AI dependencies.  
 
-### `npm start`
+- **Download Options**  
+  - Download notes in a user-friendly format.  
+  - Download metadata, including notes and images, in a well-organized ZIP file.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Interactive Learning**  
+  Tools and features designed to improve your study experience, making learning more efficient and engaging.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **User-Friendly Interface**  
+  Clean, responsive design ensures a seamless experience across devices.  
 
-### `npm test`
+## 🔗 Related Resources  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Backend Repository**: [SlidesToNotes Backend](https://github.com/nsider4/SlidesToNotesBackend)  
+- **Live Application**: [SlidesToNotes Website](https://slides-to-notes.vercel.app/) (The counter might take ~1m to show up due to the nature of host)
 
-### `npm run build`
+## 🛠️ Built With  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React**: For building a dynamic and responsive user interface.
+- **CSS**: For styling the application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 How to Run  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the Repository**  
+   Clone the repository to your local machine using the following commands:  
+   ```bash
+   git clone https://github.com/nsider4/SlidesToNotes.git
+   cd SlidesToNotes
+   
+2. **Install Dependencies**  
+   Ensure you have Node.js installed. Then, install the required dependencies:  
+   ```bash
+   npm install
 
-### `npm run eject`
+3. **Start the Development Server**  
+   Run the following command to start the React development server:
+   ```bash
+   npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The server will automatically open the application in your default web browser. If it doesn't, you can manually visit http://localhost:3000
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📂 File Structure  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The project is organized as follows:  
 
-## Learn More
+```plaintext
+slidestonotes/
+├── public/                # Publicly accessible files (e.g., index.html, favicon)
+├── src/                   # Main source code directory
+│   ├── components/        # Reusable React components
+│   │   ├── UploadSection/ # Components for uploading files and managing notes
+│   │   └── ...            # Other UI components
+│   ├── pages/             # Page-level components
+│   │   ├── Home/          # Home page with upload and feature sections
+│   │   └── ...            # Other page-level components
+│   ├── styles/            # Global styles
+│   │   ├── Footer.css     # The styles for the footer
+│   │   └── Header.css     # The styles for the header
+│   ├── utils/             # Util components
+│   │   └── useFileUpload/ # Utils component with various useful functions
+│   ├── App.css            # Main application global styles
+│   ├── App.js             # Main application component
+│   ├── index.js           # Application entry point
+│   └── styles/            # Global and modular CSS files
+├── .gitignore             # Files and directories to ignore in Git
+├── package.json           # Project dependencies and scripts
+└── README.md              # Project documentation
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 How It Works  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Upload Process**:  
+   Users can easily drag-and-drop `.pptx` files or browse their local system to upload presentations.  
 
-### Code Splitting
+2. **Processing Notes**:  
+   The backend extracts detailed and structured notes from the uploaded file, ensuring clarity and usability for study purposes.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. **Download Options**:  
+   - **Notes**: Download extracted notes in text format or copy them directly to the clipboard.  
+   - **Metadata**: Download a ZIP file containing all notes and related images extracted from the PowerPoint slides.  
 
-### Analyzing the Bundle Size
+4. **Interactive Features**:  
+   The platform includes intuitive tools to help users organize, refine, and customize their study notes efficiently.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🤝 Support  
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you experience issues, have suggestions, or need assistance, here are your options:  
+- Open an issue on the [GitHub repository](https://github.com/nsider4/SlidesToNotes).
