@@ -63,7 +63,7 @@ const MetadataDownloadButton = ({ notes, imageFormat, fileName }) => {
         imageUrls: extractedImageUrls,
       };
 
-      const response = await axios.post("/api/metadata/download", data, {
+      const response = await axios.post("https://backend-slidestonotes.onrender.com/api/metadata/download", data, {
         responseType: "blob",
       });
 

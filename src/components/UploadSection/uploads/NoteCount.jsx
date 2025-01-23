@@ -5,7 +5,7 @@ const NoteCount = () => {
 
     const fetchNoteCount = async () => {
         try {
-            const response = await fetch('https://slidestonotes-spring.onrender.com/get-note-count');
+            const response = await fetch('https://backend-slidestonotes.onrender.com/get-note-count');
             const data = await response.text();
             setNoteCount(Number(data));
         } catch (error) {
