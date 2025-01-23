@@ -1,6 +1,6 @@
 # 🗒️ SlidesToNotes
 
-The **SlidesToNotes** is the user interface for the **SlidesToNotes** application, allowing users to easily upload PowerPoint presentations, generate concise notes, and download metadata. Built using **React**, the application is designed with simplicity and efficiency in mind to enhance your learning experience.  
+**SlidesToNotes** allows users to easily upload PowerPoint presentations, generate concise notes, and download metadata. Built using **React**, the application is designed with simplicity and efficiency in mind to enhance your learning experience.  
 
 ## 🚀 Features  
 
